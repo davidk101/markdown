@@ -3,9 +3,10 @@ import {Inner, Item, Container, Pane, Title, SubTitle, Image} from './styles/jum
 
 export default function Jumbotron({children, direction = 'row', ...restProps}){
 
+    // <Item> is only for the border
     return (
-        <Item direction = {direction}>
-            <Inner>
+        <Item>
+            <Inner direction = {direction}>
                 {children}
             </Inner>
         </Item>);
