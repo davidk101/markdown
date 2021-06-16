@@ -5,7 +5,7 @@ export const Background = styled.div`
 
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)) top left / cover
     no-repeat;
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
@@ -34,8 +34,8 @@ export const Container = styled.div`
 // this is an element from ReactRouter and we're applying styling to that link
 export const Logo = styled.img ` 
 
-  height: 36px;
-  width: 134px;
+  height: 80px;
+  width: 140px;
   margin-right: 40px;
   @media (min-width: 1449px) {
     height: 45px;

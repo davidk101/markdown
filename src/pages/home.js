@@ -16,4 +16,6 @@ export default function Home(){
         </>
     );
 
+    // header background color applied to entirety of HeaderContainer
+
 }
