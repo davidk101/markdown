@@ -4,7 +4,8 @@ import App from './app';
 import { GlobalStyles } from './global-styles'; // add fragment since jsx elements adjacent must be enclosed
 import 'normalize.css'
 
-ReactDOM.render(<>
+ReactDOM.render(
+    <>
     <GlobalStyles />
     <App />
     < />,
