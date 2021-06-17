@@ -5,7 +5,7 @@ export const Background = styled.div`
 
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)) top left / cover
+  background: clear top left / cover 
     no-repeat;
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
@@ -45,10 +45,10 @@ export const Logo = styled.img `
 export const ButtonLink = styled(ReactRouterLink)`
 
   display: block;
-  background-color: #e50914;
-  width: 84px;
+  background-color: #76323F;
+  width: 55px;
   height: fit-content;
-  color: white;
+  color: #D7CEC7;
   border: 0;
   font-size: 15px;
   border-radius: 3px;

@@ -4,9 +4,9 @@ import styled from 'styled-components/macro'; // macro gives component name whil
 
 export const Item = styled.div`
     display: flex;
-    border-bottom: 8px solid #222;
+    border-bottom: 8px solid clear;
     padding: 50px 5%;
-    color: white;
+    color: #76323F;
     overflow: hidden;
     
 `;
@@ -32,8 +32,6 @@ export const Pane = styled.div`
         padding: 0 45px;
         text-align: center;
     }
-    
-    
     `;
 
 export const Title = styled.h1`
@@ -44,9 +42,6 @@ export const Title = styled.h1`
     @media (max-width: 600px){
         font-size: 35px;
     }
-    
-    
-    
     `;
 
 export const SubTitle = styled.h2`
@@ -57,14 +52,11 @@ export const SubTitle = styled.h2`
     @media (max-width: 600px){
         font-size: 18px;
     }
-    
     `;
 
 export const Image = styled.img`
     max-width: 100%;
     height: auto;
-    
-    
     `;
 
 export const Container = styled.div`
@@ -72,7 +64,6 @@ export const Container = styled.div`
     @media (max-width: 1000px){
         ${Item}: last-of-type h2{ 
             margin-bottom: 50px;
-
     `;
 
 // last-of-type focuses on the last Container's styling
