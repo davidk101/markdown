@@ -5,8 +5,8 @@ import {Form} from '../components'; // from components/index.js
 
 export default function Signin(){
 
-    const [emailAddress, setEmailAddress] = useState();
-    const [password, setPassword] = useState();
+    const [emailAddress, setEmailAddress] = useState('');
+    const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
     // check if email and password is valid
@@ -39,9 +39,11 @@ export default function Signin(){
                     <Form.Submit disabled = {isInvalid} type = "submit">
                         Sign in
                     </Form.Submit>
-
-
                     </Form.Base>
+
+                    <Form.Text>
+                        New to markdown? <Form.Link to = "/signup">Sign up now.</Form.Link>
+                    </Form.Text>
                 </Form>
             </HeaderContainer>
             <FooterContainer />
