@@ -3,11 +3,15 @@ import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import * as ROUTES from './constants/routes'
 import {Home, Browse, Signin, Signup} from './pages';
 import {IsUserRedirect, ProtectedRoute} from './helpers/routes';
+import {useAuthListener} from "./hooks"; // since we instantiated hooks/index.js
 
 // the image wont return any children, we're only passing in props
 export default function App() {
 
-    const user = null;
+    const {user} = useAuthListener();
+    //const user = null;
+    console.log(user);
+
     return (
 
         <Router>
