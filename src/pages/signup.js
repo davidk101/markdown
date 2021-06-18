@@ -23,8 +23,28 @@ export default function Signup(){
         event.preventDefault();
 
         // firebase connection
+        return firebase
+            .auth()
+            .createUserWithEmailAndPassword(emailAddress, password) // returns a promise - then()
+            .then((result) =>
+                // adding firstName to user
+                result.user
+                    .updateProfile({
+                        displayName: firstName
+                    })
+                    .then(() => {
 
-    }
+                        history.push(ROUTES.BROWSE);
+                    })
+            )
+            .catch((error) => {
+                setFirstName('');
+                setEmailAddress('');
+                setPassword('');
+                setError(error.message);
+            });
+    };
+
     return (
         <>
             <HeaderContainer>
@@ -60,5 +80,5 @@ export default function Signup(){
             <FooterContainer />
         </>
 
-    );
+    )
 }
